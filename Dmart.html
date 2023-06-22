@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D-Mart Billing System</title>
+    <link rel="stylesheet" href="C:\Users\DELL\Desktop\internship\style.css">
+<script src="path/to/your/script.js"></script>
+
+  </head>
+  <body>
+    <h1>D-Mart Billing System</h1>
+    <div class="container">
+      <form>
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name">
+        <label for="item-price">Item Price:</label>
+        <input type="number" id="item-price">
+        <label for="item-quantity">Quantity:</label>
+        <input type="number" id="item-quantity">
+        <button type="button" onclick="addItem()">Add Item</button>
+      </form>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Item Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="item-list"></tbody>
+      </table>
+      <hr>
+      <div id="total-price"></div>
+      <button type="button" onclick="generateReceipt()">Generate Receipt</button>
+	<button type="button" id="showItemList">Show Items</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
